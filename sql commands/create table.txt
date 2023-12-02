@@ -1,0 +1,12 @@
+CREATE TABLE Users (
+    user_ID INTEGER PRIMARY KEY,
+    first_Name TEXT NOT NULL,
+    last_Name TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    contact_Number TEXT CHECK(length(contact_Number) <= 13),
+    age INTEGER,
+    date_Of_Birth DATE,
+    username TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL,
+    user_Type TEXT CHECK(user_Type IN ('admin', 'user')) NOT NULL
+);

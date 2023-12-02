@@ -1,0 +1,21 @@
+INSERT INTO Users (
+    first_Name, 
+    last_Name, 
+    email, 
+    contact_Number, 
+    age, 
+    date_Of_Birth, 
+    username, 
+    password, 
+    user_Type
+) VALUES (
+    'John',
+    'Doe',
+    'john.doe@example.com',
+    '123-456-7890',
+    25,
+    '1998-01-15',
+    'johndoe',
+    'password',
+    'user'
+);
