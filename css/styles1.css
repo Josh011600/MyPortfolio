@@ -40,19 +40,24 @@ body {
 
 /* Nav bar */
 
-nav {
+        header {
             background-color: #333;
-            overflow: hidden;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        nav {
+          position: relative;
+          top: -45px;
+            display: inline-block;
             float: right;
-            width: 100%;
         }
 
         nav a {
-          float: left;
-                       display: block;
+            display: inline-block;
             color: white;
-            text-align: center;
-            padding: 14px 16px;
+            padding: 10px 16px;
             text-decoration: none;
         }
 
@@ -60,9 +65,12 @@ nav {
             background-color: #ddd;
             color: black;
         }
-
 .logo img {
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 10px; /* Adjust this margin as needed */
+  background-color: black;
+            display: block;
+            margin-right: 20px; /* Adjust this margin as needed */
         }
+
+.logo img:hover {
+  background-color: #ddd;
+}
