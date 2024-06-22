@@ -42,7 +42,7 @@ body {
 .logo img {
   background-color: black;
             display: block;
-            margin-right: 20px; /* Adjust this margin as needed */
+            margin-right: 50px; /* Adjust this margin as needed */
         }
 
 .logo img:hover {
@@ -60,26 +60,31 @@ body {
   top: 80px;
   left: 40px;
   padding: 10px;
-  z-index: -1;
+  
 }
 .introduction_with_title .greeting {
   background-color: #2C5364;
+  font-size: 50px;
+
+  color: lightgrey;
+  margin: 30px;
   width: 100%;
-  color: white;
-  padding: 20px;
+  max-width: 100%;
+  padding: 10px;
   border: 3px solid #ccc;
-  position: absolute;
-  margin: 0 20 20 0;
-  text-align: inherit;
+  display: table;
+  text-align: center;
+ z-index: -1; 
 }
 .introduction_with_title .goal_description {
   background-color: #2C5364;
-  color: white;
-  margin: 20px;
-  margin-left: 55px;
-  padding: 30px;
+  color: lightgrey;
+  margin: 30px;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
   border: 3px solid #ccc;
-  display: block;
+  display: table;
   text-align: center;
  z-index: -1; 
 }
@@ -87,10 +92,13 @@ body {
 .learning_introduction {
 background-color: #2C5364;
   color: white;
-  margin: 20px;
-  margin-left: 55px;
-  padding: 50px;
+  margin: 30px;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
   border: 3px solid #ccc;
   display: block;
+  text-align: center;
+ z-index: -1; 
 }
 
