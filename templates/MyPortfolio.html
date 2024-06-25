@@ -1,16 +1,20 @@
  <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="css/styles1.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles1.css') }}">
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  
 </head>
 <body>
     <header>
+    <script src="script1.js"></script> 
+       
+        
     
-       <div class="logo">
-        <img class="mylogo" src="images/logo.png"  alt="Your Logo">
-    </div>
     <nav>
+      <div class="logo">
+      <img class="mylogo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </div>
       <div class="burger" id="burger">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -30,7 +34,8 @@
     <!-- Introduction -->
 <section class="intro" id="home">
 <div class="image1">
-    <img src="images/Joshua-Wearing-Toga.png" alt="gradpic">
+  <img src="{{ url_for('static', filename='images/Joshua-Wearing-Toga.png') }}" alt="gradpic">
+    
 </div>
 <div class="introduction_with_title">
     <h1 class="greeting">Joshua Saculo </h1> 
@@ -38,7 +43,6 @@
 </div>
 <p class="learning_introduction">I am passionate about web development and currently learning the ropes. Excited about the journey ahead, and eager to take on new challenges.</p>
 </section>
- <!-- My Services -->
  <!-- My Services -->
       <section class="my-services" id="services"> 
         <h2 class="section__title section__title--services">What I do</h2>
@@ -78,12 +82,12 @@
               Proin porttitor neque vitae lectus tempus, in laoreet ipsum tincidunt. 
               Cras porta mi ligula, ut tincidunt nibh luctus non. In at venenatis odio.</p>
           </div>
-          <img class="about-image"src="images/Joshua-Wearing-Barong.jpg" alt="Joshua wearing barong">
+          <img class="about-image"src="{{ url_for('static', filename='images/Joshua-Wearing-Barong.jpg') }}" alt="wearing barong">
         </section>
 
         <!-- My Work -->
 
-        <section id="work" >
+        <section id="work">
           <h2>My work</h2>
           <p></p>
           <div>
