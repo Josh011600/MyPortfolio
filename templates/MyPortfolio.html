@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles1.css') }}">
-  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
   
 </head>
 <body>
@@ -12,20 +12,15 @@
         
     
     <nav>
-      <div class="logo">
-      <img class="mylogo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+      <div  class="logo">
+      <a href="#home"> <img class="mylogo" src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"></a>
         </div>
-      <div class="burger" id="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+      
         <ul class="nav-links" id="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
-        
          </ul>
 
     </nav>
@@ -33,7 +28,8 @@
     </header>
     <!-- Introduction -->
 <section class="intro" id="home">
-<div class="image1">
+<div class="gradphoto">
+
   <img src="{{ url_for('static', filename='images/Joshua-Wearing-Toga.png') }}" alt="gradpic">
     
 </div>
@@ -62,10 +58,7 @@
           </div> <!-- / service -->
 
           <div class="service">
-            <h3>Teaching</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              In congue lacinia libero id venenatis. Duis suscipit feugiat luctus. 
-              Quisque neque nisi, interdum ut elit vel, aliquet feugiat arcu.</p>
+            
           </div> <!-- / service -->
         </div><!-- / services -->
         <a href="#work" class="btn">My Work</a>
@@ -82,7 +75,7 @@
               Proin porttitor neque vitae lectus tempus, in laoreet ipsum tincidunt. 
               Cras porta mi ligula, ut tincidunt nibh luctus non. In at venenatis odio.</p>
           </div>
-          <img class="about-image"src="{{ url_for('static', filename='images/Joshua-Wearing-Barong.jpg') }}" alt="wearing barong">
+          <img class="about-image"src="{{ url_for('static', filename='images/josh.png') }}" alt="wearing barong">
         </section>
 
         <!-- My Work -->
